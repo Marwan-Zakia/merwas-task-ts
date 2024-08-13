@@ -1,11 +1,13 @@
 import { Box, Container } from '@mui/material'
 import React from 'react'
-import { ListOfOfferings } from './data.ts'
-import OfferingItem from './OfferingItem'
+import { aboutUsData } from './data'
+import AboutUsCard from './Card'
 
-export default function OfferingsItems() {
+
+
+export default function Cards() {
     return (
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
             <Box sx={{
                 display: "grid",
                 gridTemplateColumns: {
@@ -15,7 +17,7 @@ export default function OfferingsItems() {
                 }
 
             }} >
-                {ListOfOfferings.map((offering) => <OfferingItem key={offering.title} offering={offering} />)}
+                {aboutUsData.map((item) => <AboutUsCard key={item.title} aboutUsItem={item} />)}
             </Box>
 
         </Container>

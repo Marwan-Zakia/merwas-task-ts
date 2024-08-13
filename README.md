@@ -22,3 +22,5 @@
          No Notes  
     - Footer
          No Notes  
+
+    - fav icon
