@@ -9,15 +9,20 @@ import Svgs from './Svgs'
 
 export default function Announcment() {
     return (
-        <Toolbar disableGutters style={{ backgroundColor: "#ffffff" }} >
-            <Container maxWidth="xl">
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "end", color: "red" }}>
+        <Box sx={{ backgroundColor: "#ffffff" }}>
+            <Container maxWidth="xl"  >
+                <Box sx={{
+                    flexGrow: 1, display: 'flex', justifyContent: { xs: 'center', md: "end" }, alignItems: "center", height: 53,
+                }} className="">
                     <Svgs />
                 </Box>
-
-
             </Container>
-        </Toolbar>
+        </Box>
+
+
 
     )
 }
+
+
+

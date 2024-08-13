@@ -3,9 +3,9 @@ import React from 'react'
 export default function FaceBookIcon() {
 
     return (
-        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.62891 8.31543H5.57812V14.4404H2.84375V8.31543H0.601562V5.7998H2.84375V3.8584C2.84375 1.6709 4.15625 0.44043 6.15234 0.44043C7.10938 0.44043 8.12109 0.631836 8.12109 0.631836V2.79199H7C5.90625 2.79199 5.57812 3.44824 5.57812 4.15918V5.7998H8.01172L7.62891 8.31543Z" fill="currentColor" />
-        </svg>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" /></svg>
 
     )
 }
