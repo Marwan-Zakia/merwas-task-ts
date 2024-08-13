@@ -5,7 +5,6 @@ import AboutUs from "@/Components/AboutUs/Index";
 import Services from "@/Components/Services/Index";
 import Partners from "@/Components/Partners/Index";
 import ContactUs from "@/Components/ContactUs/Index";
-import Footer from "@/Components/Footer/Index";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
       <Services />
       <Partners />
       <ContactUs />
-      <Footer />
+
     </main>
   );
 }

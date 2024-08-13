@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Box, Container, InputLabel, Select, Toolbar, MenuItem, Menu, IconButton, Button, Tooltip, Typography } from '@mui/material'
+import { Box, Container, InputLabel, Select, Toolbar, MenuItem, Menu, IconButton, Button, Tooltip, Typography, Fab } from '@mui/material'
 import LanguageIcon from '@mui/icons-material/Language';
 import Image from 'next/image'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu';
+
 const pages = ['Home', 'About Us', 'Services', "Partners", "Contact Us"];
 type Actions = {
     name: string,
@@ -39,14 +40,14 @@ export default function NavContent() {
     };
     return (
         <Toolbar disableGutters style={{ backgroundColor: "#3F485E" }}>
-            <Container maxWidth="xl" >
+            <Container maxWidth="xl" sx={{ display: 'flex', justifyContent: "space-between", alignItems: "center", padding: "15px 15px" }} >
                 {/* Logo */}
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "start" }}>
+                <Box sx={{ display: { xs: 'none', lg: 'flex' }, justifyContent: "start" }}>
                     <div className="" style={{ width: "250px", height: "50px" }}>
                         <Image src={"/Logo.png"} width={250} height={50} alt='Merwas is Here' style={{ objectFit: "contain" }} />
                     </div>
                 </Box>
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: "start" }}>
+                <Box sx={{ display: { xs: 'flex', lg: 'none' }, justifyContent: "start" }}>
                     <div className="" style={{ width: "150px", height: "50px" }}>
                         <Image src={"/Logo.png"} width={150} height={50} alt='Merwas is Here' style={{ objectFit: "contain" }} />
                     </div>
@@ -54,33 +55,96 @@ export default function NavContent() {
                 {/* Logo */}
 
                 {/* Nav Content */}
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "space-between", gap: "8px" }}>
 
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, }}>
-                        {pages.map((page) => (
-                            <Link href="#" key={page}>
+                <Box sx={{ display: { xs: 'none', lg: 'grid' }, flexGrow: 1, maxWidth: "30rem", alignItems: "center", placeContent: "center", gridTemplateColumns: "repeat(5,1fr)", whiteSpace: "nowrap", textAlign: "center", gap: "20px" }}>
+                    {pages.map((page) => (
+                        <Box sx={{
+                            borderTop: "2px solid transparent",
+                            paddingTop: "8px",
+                            lineHeight: "18.29px",
+                            textTransform: "uppercase",
+                            fontSize: "15px",
+                            ":hover": {
+                                borderTop: "2px solid #EB6B2A",
+                                color: "#EB6B2A"
+                            },
+                            transition: "color 1s"
+                        }} key={page} >
+                            <Link href="#" >
                                 {page}
                             </Link>
-                        ))}
-                    </Box>
-                    <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: "end" }}>
-                        <InputLabel id="label">
-                            <LanguageIcon />
-                        </InputLabel>
-                        <Select size='small' labelId='label' id="select" value="en">
-                            <MenuItem value="en">Engilsh</MenuItem>
-                            <MenuItem value="ar">Arabic</MenuItem>
-                        </Select>
-                        <Button>Register</Button>
-                        <Button>Log in</Button>
+                        </Box>
+                    ))}
+                </Box>
+                <Box sx={{ display: { xs: 'none', lg: 'flex' }, justifyContent: "end", alignItems: "center", }}>
+
+                    <Select size='small' labelId='label' id="LangSelect" value="en" sx={{
+                        border: "0px",
+                        padding: 0,
+                        fontSize: "small",
+                        display: "flex",
+                        alignItems: "center"
+                    }}
+                    >
+
+                        <MenuItem value="en">
+                            <Box
+                                sx={{
+                                    display: 'flex', justifyContent: "end", gap: "4px", alignItems: "center"
+                                }}
+                            >
+                                <LanguageIcon sx={{ width: "20px", height: "20px" }} />
+                                <div className="">Engilsh</div>
+                            </Box>
+                        </MenuItem>
+                        <MenuItem value="ar">
+                            <Box
+                                sx={{
+                                    display: 'flex', justifyContent: "end", gap: "4px", alignItems: "center"
+                                }}
+                            >
+                                <LanguageIcon sx={{ width: "20px", height: "20px" }} />
+                                <div className="">Arabic</div>
+                            </Box>
 
 
-                    </Box>
+                        </MenuItem>
+                    </Select>
+
+                    <Fab variant="extended"
+                        sx={{
+                            backgroundColor: "#fff", color: "#3F485E", border: "1px solid #3F485E", fontSize: "12px", ":hover": {
+                                borderTop: "2px solid #fff",
+                                // color: "#fff",
+                            },
+                            padding: "10px 20px 10px 20px",
+                            fontFamily: "Nobile",
+                            marginRight: "4px"
+                        }}
+
+                    >
+
+                        Register
+                    </Fab>
+                    <Fab variant="extended" size='large' sx={{
+                        backgroundColor: "#3F485E", color: "#ffffff", border: "1px solid #fff", fontSize: "12px", ":hover": {
+                            borderTop: "2px solid #3F485E",
+                            color: "#3F485E",
+                        },
+                        padding: "10px 20px 10px 20px",
+                        fontFamily: "Nobile"
+                    }}>
+
+                        Log in
+                    </Fab>
+
+
+
                 </Box>
 
                 {/* Nav Content */}
 
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: "end" }}>
+                <Box sx={{ flexGrow: 1, display: { xs: 'flex', lg: 'none' }, justifyContent: "end" }}>
                     <Tooltip title="Open settings">
                         <IconButton
                             size="large"
@@ -108,7 +172,7 @@ export default function NavContent() {
                         open={Boolean(anchorElNav)}
                         onClose={handleCloseNavMenu}
                         sx={{
-                            display: { xs: 'block', md: 'none' },
+                            display: { xs: 'block', lg: 'none' },
                         }}
                     >
                         {pages.map((page) => (
