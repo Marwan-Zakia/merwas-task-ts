@@ -20,7 +20,7 @@ export const ListOfOfferings: Items = [
     },
     {
         title: "Access to Funding and Markets",
-        subTitle: "IUnlock Financing Opportunities and Expand Your Impact",
+        subTitle: "I Unlock Financing Opportunities and Expand Your Impact",
         path: "#",
         imageSrc: "/AccessToFundingAndMarkets.png"
     },

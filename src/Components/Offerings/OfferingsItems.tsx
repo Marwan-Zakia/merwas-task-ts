@@ -5,14 +5,17 @@ import OfferingItem from './OfferingItem'
 
 export default function OfferingsItems() {
     return (
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
             <Box sx={{
                 display: "grid",
                 gridTemplateColumns: {
                     md: "repeat(2,1fr)",
-                    xs: '1fr'
+                    xs: '1fr',
 
-                }
+
+                },
+                placeItems: "center",
+                gap: "30px"
 
             }} >
                 {ListOfOfferings.map((offering) => <OfferingItem key={offering.title} offering={offering} />)}
