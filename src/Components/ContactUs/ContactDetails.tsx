@@ -33,7 +33,7 @@ export default function ContactDetails() {
                                 <Box sx={{
                                 }} >
                                     <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "18px", md: "12px", xs: "12px" }, lineHeight: { lg: "35px", xs: "25px" }, fontWeight: 400, }}>{detail.title}</Typography>
-                                    {Array.isArray(detail.children) ? detail.children?.map((item) => <Typography key={item} sx={{ fontFamily: "Nobile", fontSize: { lg: "12px", xs: "10px" }, fontWeight: 400, }}>{item}</Typography>) : null}
+                                    {Array.isArray(detail.children) ? detail.children?.map((item, index) => <Typography key={`${item}-${index}`} sx={{ fontFamily: "Nobile", fontSize: { lg: "12px", xs: "10px" }, fontWeight: 400, }}>{item}</Typography>) : null}
                                 </Box>
                             </Box>
                             {!Array.isArray(detail.children) ? <Box sx={{

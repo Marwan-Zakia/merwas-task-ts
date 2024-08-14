@@ -1,31 +1,43 @@
 "use client"
-import { Button, FormControl, InputLabel, TextField } from '@mui/material'
+import { Button, Fab, FormControl, InputLabel, TextField } from '@mui/material'
 import React from 'react'
 
 export default function Email() {
     return (
-        <div>
-            <FormControl fullWidth>
-                <InputLabel variant="standard" htmlFor="uncontrolled-native">
-                    Age
-                </InputLabel>
-                <TextField
-                    id="standard-textarea"
-                    label="Multiline Placeholder"
-                    placeholder="Placeholder"
-                    multiline
-                    variant="standard"
-                />
-            </FormControl>
-            <FormControl fullWidth>
-                <Button
-                    onClick={() => {
+        <FormControl fullWidth sx={{ position: "relative", width: { lg: "100%", xs: "200px" } }}>
 
-                    }}
-                >
-                    Click me
-                </Button>
+            <TextField
+                sx={{
+                    borderRadius: "25px",
+                    border: "1px solid #eee",
+                    padding: "0.5rem",
+                    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+
+                    backgroundColor: "#fff"
+                }}
+
+                placeholder='Enter your email'
+
+                variant="standard"
+            />
+            <FormControl sx={{
+                width: "fit-content", position: "absolute",
+                top: "1px",
+                right: "1px"
+            }}>
+                <Fab variant="extended" size='large' sx={{
+                    backgroundColor: "#3F485E", color: "#ffffff", fontSize: "12px", ":hover": {
+                        borderTop: "2px solid #3F485E",
+                        color: "#3F485E",
+                    },
+                    padding: "1.5rem",
+                    fontFamily: "Nobile",
+
+                }}>
+
+                    Subscribe
+                </Fab>
             </FormControl>
-        </div>
+        </FormControl>
     )
 }
