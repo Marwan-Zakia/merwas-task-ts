@@ -25,11 +25,7 @@ export default function AboutUsCard({ aboutUsItem }: Props) {
                 <div> {aboutUsItem.svg}</div>
 
                 <Box sx={{
-
-
                 }} >
-
-
 
                     <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "35px", xs: "25px" }, fontWeight: 400, }}>{aboutUsItem.title}</Typography>
 

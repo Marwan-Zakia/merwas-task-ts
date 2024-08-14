@@ -46,7 +46,7 @@ a {
   background-color: #ffffff;
   border: 1px solid #e7e7ec;
   border-radius: 100%;
-  /* max-width: calc(100% - 2rem); */
+
 }
 
 .svgParent svg {
@@ -69,4 +69,22 @@ fieldset {
 
 .MuiOutlinedInput-root:has(#LangSelect) .MuiSvgIcon-fontSizeMedium {
   color: #ffffff !important;
+}
+.MuiInputBase-root::before {
+  border-bottom: 1px solid transparent !important;
+
+}
+
+.MuiInputBase-root::after {
+  border-bottom: 1px solid transparent !important;
+}
+
+.MuiInputBase-input {
+  padding-left: 1rem;
+}
+
+.MuiInputBase-input:focus {
+  outline: 1px solid #3F485E !important;
+  border-radius: 25px;
+  outline-offset: 9px;
 }
