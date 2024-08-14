@@ -37,9 +37,10 @@ export default function AboutUsContents() {
 
                     </div>
                     <Box sx={{
-                        overflow: "hidden",
+
                         objectFit: "cover",
-                        marginInline: '0 auto'
+                        marginInline: '0 auto',
+                        maxWidth: { lg: "100%", xs: "calc(100% - 1rem)" },
 
 
 
