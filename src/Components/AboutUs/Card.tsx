@@ -27,9 +27,9 @@ export default function AboutUsCard({ aboutUsItem }: Props) {
                 <Box sx={{
                 }} >
 
-                    <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "35px", xs: "25px" }, fontWeight: 400, }}>{aboutUsItem.title}</Typography>
+                    <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "35px", xs: "25px" }, fontWeight: 400, }}>{aboutUsItem.title}</Typography>
 
-                    <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "12px", xs: "10px" }, fontWeight: 400, }}>{aboutUsItem.text}</Typography>
+                    <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "12px", xs: "10px" }, fontWeight: 400, }}>{aboutUsItem.text}</Typography>
                 </Box>
             </Box>
 

@@ -44,8 +44,8 @@ export default function OfferingItem({ offering }: Props) {
                 }}
 
             >
-                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "18px", md: "16px", xs: "12px" }, fontWeight: 500, paddingInline: "2rem", color: "#fff" }}>{offering.title}</Typography>
-                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "12px", md: "12px", xs: "10px" }, fontWeight: 300, paddingInline: "2rem", color: "#fff" }}>{offering.subTitle}</Typography>
+                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "18px", md: "16px", xs: "12px" }, fontWeight: 500, paddingInline: "2rem", color: "#fff" }}>{offering.title}</Typography>
+                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "12px", md: "12px", xs: "10px" }, fontWeight: 300, paddingInline: "2rem", color: "#fff" }}>{offering.subTitle}</Typography>
                 <Link href={offering.path} style={{ color: "#fff" }}>
                     <Box sx={{
 

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ['Home', 'About Us', 'Services', "Partners", "Contact Us"];
+const pages = [{ name: 'Home', href: "#home" }, { name: 'About Us', href: "#aboutus" }, { name: 'Contact Us', href: "#contactus" }, { name: 'Services', href: "#services" }, { name: 'Partners', href: "#partners" }];
 type Actions = {
     name: string,
     callback: () => void
@@ -69,9 +69,9 @@ export default function NavContent() {
                                 color: "#EB6B2A"
                             },
                             transition: "color 1s"
-                        }} key={page} >
-                            <Link href="#" >
-                                {page}
+                        }} key={page.name} >
+                            <Link href={page.href}  >
+                                {page.name}
                             </Link>
                         </Box>
                     ))}
@@ -118,7 +118,7 @@ export default function NavContent() {
                                 // color: "#fff",
                             },
                             padding: "10px 20px 10px 20px",
-                            fontFamily: "Nobile",
+                            fontFamily: "sans-serif",
                             marginRight: "4px"
                         }}
 
@@ -132,7 +132,7 @@ export default function NavContent() {
                             color: "#3F485E",
                         },
                         padding: "10px 20px 10px 20px",
-                        fontFamily: "Nobile"
+                        fontFamily: "sans-serif"
                     }}>
 
                         Log in
@@ -176,8 +176,8 @@ export default function NavContent() {
                         }}
                     >
                         {pages.map((page) => (
-                            <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                <Typography fontFamily={"nobile"} textAlign="center">{page}</Typography>
+                            <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                                <Link href={page.href} >{page.name}</Link>
                             </MenuItem>
                         ))}
                         {actions.map((action) => (

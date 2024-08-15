@@ -29,7 +29,7 @@ export default function Hero() {
 
 
             }}>
-                <Typography sx={{ marginLeft: { md: "22%", xs: "5%" }, fontFamily: "Nobile", fontSize: { lg: "30px", md: "20px", xs: "15px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 700, color: "#fff", maxWidth: "34rem" }}>Welcome to The <span className="" style={{ color: "#EB6B2A" }}>OurWebsite</span> Your Platform for Launching Towards Technological Success!</Typography>
+                <Typography sx={{ marginLeft: { md: "22%", xs: "5%" }, fontFamily: "sans-serif", fontSize: { lg: "30px", md: "20px", xs: "15px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 700, color: "#fff", maxWidth: "34rem" }}>Welcome to The <span className="" style={{ color: "#EB6B2A" }}>OurWebsite</span> Your Platform for Launching Towards Technological Success!</Typography>
             </Box>
         </div>
     )

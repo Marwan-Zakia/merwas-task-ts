@@ -6,7 +6,7 @@ import ContactDetails from './ContactDetails'
 
 export default function ContactUs() {
     return (
-        <div>
+        <div id="contactus">
             <Heading />
 
             <Container maxWidth="lg">
@@ -26,6 +26,7 @@ export default function ContactUs() {
                 </Box>
                 <Box sx={{
                     display: "grid",
+                    paddingBottom: "2rem"
 
                 }} >
 
