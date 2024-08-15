@@ -13,7 +13,7 @@ export default function RightsSection() {
                 marginTop: "1.5rem"
 
             }}>
-                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "12px", md: "12px", xs: "12px" }, color: "#fff", lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center" }}>Copyright © 2024OurWebsite . All Right Reserved.</Typography>
+                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "12px", md: "12px", xs: "12px" }, color: "#fff", lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center" }}>Copyright © 2024OurWebsite . All Right Reserved.</Typography>
                 <Select size='small' labelId='label' id="LangSelect" value="en" sx={{
                     border: "0px",
                     padding: 0,

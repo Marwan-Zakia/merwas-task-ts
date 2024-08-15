@@ -28,13 +28,13 @@ export default function TransparentCards({ item, roundedDirection }: cardsType) 
 
                     placeContent: "center",
                     alignItems: "center",
-                    paddingInline: "2rem"
+                    paddingBottom: "4rem "
                 }} >
                     {roundedDirection === "bottomLeft" ?
                         <>
                             <Box sx={{ position: "relative", width: "100%" }} >
-                                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "34px", md: "24px", xs: "16px" }, lineHeight: { lg: "70px", xs: "30px" }, fontWeight: 500, color: "#000000", maxWidth: "34rem", }}> {item.title}</Typography>
-                                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "16px", xs: "14px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 400, color: "#000000" }}>{item.text}</Typography>
+                                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "34px", md: "24px", xs: "16px" }, lineHeight: { lg: "70px", xs: "30px" }, fontWeight: 500, color: "#000000", maxWidth: "34rem", }}> {item.title}</Typography>
+                                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "16px", md: "16px", xs: "14px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 400, color: "#000000" }}>{item.text}</Typography>
 
 
 
@@ -69,8 +69,8 @@ export default function TransparentCards({ item, roundedDirection }: cardsType) 
                                 <Images />
                             </Box>
                             <Box sx={{ position: "relative", width: "100%" }} >
-                                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "34px", md: "24px", xs: "16px" }, lineHeight: { lg: "70px", xs: "30px" }, fontWeight: 500, color: "#000000", maxWidth: "34rem", }}> {item.title}</Typography>
-                                <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "16px", xs: "14px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 400, color: "#000000" }}>{item.text}</Typography>
+                                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "34px", md: "24px", xs: "16px" }, lineHeight: { lg: "70px", xs: "30px" }, fontWeight: 500, color: "#000000", maxWidth: "34rem", }}> {item.title}</Typography>
+                                <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "16px", md: "16px", xs: "14px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 400, color: "#000000" }}>{item.text}</Typography>
 
                             </Box>
                         </>}

@@ -51,7 +51,7 @@ export default function OfferingInvite() {
                     </Box>
                 </Box>
 
-                <Typography sx={{ alignSelf: "center", fontFamily: "Nobile", fontSize: { lg: "24px", md: "20px", xs: "15px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 400, color: "#fff", maxWidth: "34rem" }}> <span className="" style={{ color: "#EB6B2A" }}>OurWebsite</span> Your Gateway to Technological Excellence
+                <Typography sx={{ alignSelf: "center", fontFamily: "sans-serif", fontSize: { lg: "24px", md: "20px", xs: "15px" }, lineHeight: { lg: "40px", xs: "30px" }, fontWeight: 400, color: "#fff", maxWidth: "34rem" }}> <span className="" style={{ color: "#EB6B2A" }}>OurWebsite</span> Your Gateway to Technological Excellence
                     Get a quick glimpse into thedynamic environment at The OurWebsite and the benefits that await you</Typography>
             </Box>
         </Container>

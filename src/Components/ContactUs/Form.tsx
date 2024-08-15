@@ -7,7 +7,7 @@ export default function Form() {
     return (
 
         <Box>
-            <Typography sx={{ marginTop: "2rem", fontFamily: "Nobile", fontSize: { lg: "22px", md: "20px", xs: "15px" }, lineHeight: { lg: "40px", xs: "25px" }, fontWeight: 700, color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Have a question?</Typography>
+            <Typography sx={{ marginTop: "2rem", fontFamily: "sans-serif", fontSize: { lg: "22px", md: "20px", xs: "15px" }, lineHeight: { lg: "40px", xs: "25px" }, fontWeight: 700, color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Have a question?</Typography>
             <Box sx={{
                 display: "grid",
 
@@ -17,7 +17,7 @@ export default function Form() {
 
             }} >
                 <FormControl fullWidth sx={{ position: "relative" }}>
-                    <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "Nobile", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Types</Typography>
+                    <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "sans-serif", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Types</Typography>
                     <NativeSelect
                         id='typesSelect'
                         sx={{
@@ -48,7 +48,7 @@ export default function Form() {
 
 
                     <FormControl fullWidth sx={{ position: "relative" }}>
-                        <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "Nobile", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Name</Typography>
+                        <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "sans-serif", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Name</Typography>
 
                         <TextField
                             sx={{
@@ -64,10 +64,10 @@ export default function Form() {
                             variant="standard"
                             defaultValue={"ali"}
                         />
-                        <Typography sx={{ position: "absolute", bottom: "-20px", right: "2px", fontFamily: "Nobile", fontSize: "10px", color: "#3F485E", maxWidth: "34rem", }}>Optinal</Typography>
+                        <Typography sx={{ position: "absolute", bottom: "-20px", right: "2px", fontFamily: "sans-serif", fontSize: "10px", color: "#3F485E", maxWidth: "34rem", }}>Optinal</Typography>
                     </FormControl>
                     <FormControl fullWidth sx={{ position: "relative" }}>
-                        <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "Nobile", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Email</Typography>
+                        <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "sans-serif", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Email</Typography>
 
                         <TextField
                             sx={{
@@ -85,7 +85,7 @@ export default function Form() {
                     </FormControl>
                 </Box>
                 <FormControl fullWidth sx={{ position: "relative" }}>
-                    <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "Nobile", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Message</Typography>
+                    <Typography sx={{ position: "absolute", top: "0px", left: "0", fontFamily: "sans-serif", fontSize: "15px", color: "#3F485E", maxWidth: "34rem", paddingBottom: "2rem" }}>Message</Typography>
                     <TextField
                         sx={{
                             borderRadius: "25px",
@@ -111,7 +111,7 @@ export default function Form() {
                             color: "#3F485E",
                         },
                         padding: "1.5rem",
-                        fontFamily: "Nobile"
+                        fontFamily: "sans-serif"
                     }}>
 
                         Send

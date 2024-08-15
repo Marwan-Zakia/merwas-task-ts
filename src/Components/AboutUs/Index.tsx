@@ -4,7 +4,7 @@ import AboutUsContents from './AboutUsContents'
 
 export default function AboutUs() {
   return (
-    <div>
+    <div id="aboutus">
       <Heading />
       <AboutUsContents />
     </div>

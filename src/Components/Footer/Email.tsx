@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Email() {
     return (
-        <FormControl fullWidth sx={{ position: "relative", width: { lg: "100%", xs: "200px" } }}>
+        <FormControl fullWidth sx={{ position: "relative", width: { lg: "100%", xs: "280px" } }}>
 
             <TextField
                 sx={{
@@ -31,7 +31,7 @@ export default function Email() {
                         color: "#3F485E",
                     },
                     padding: "1.5rem",
-                    fontFamily: "Nobile",
+                    fontFamily: "sans-serif",
 
                 }}>
 

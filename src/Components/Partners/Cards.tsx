@@ -39,7 +39,7 @@ export default function Cards() {
                         }
                     }} className="">
                         <Image alt='partner' src={"/partner.png"} width={100} height={75} style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }} />
-                        <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center", color: "#000" }}>
+                        <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center", color: "#000" }}>
                             Agreement between xyz and ourwebsite
                         </Typography>
                     </Box>
@@ -65,7 +65,7 @@ export default function Cards() {
                         }
                     }} className="">
                         <Image alt='partner' src={"/partner.png"} width={100} height={75} style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }} />
-                        <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center", color: "#000" }}>
+                        <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center", color: "#000" }}>
                             Agreement between xyz and ourwebsite
                         </Typography>
                     </Box>
@@ -91,7 +91,7 @@ export default function Cards() {
                         }
                     }} className="">
                         <Image alt='partner' src={"/partner.png"} width={100} height={75} style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }} />
-                        <Typography sx={{ fontFamily: "Nobile", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center", color: "#000" }}>
+                        <Typography sx={{ fontFamily: "sans-serif", fontSize: { lg: "16px", md: "12px", xs: "12px" }, lineHeight: { lg: "30px", xs: "25px" }, fontWeight: 400, textAlign: "center", color: "#000" }}>
                             Agreement between xyz and ourwebsite
                         </Typography>
                     </Box>
